@@ -21,7 +21,3 @@ readline.on('line', function(line) {
   console.log(upping)
   process.exit();
 });
-
-
-
-// 1666
