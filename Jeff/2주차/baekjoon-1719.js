@@ -1,6 +1,4 @@
-const { constants } = require('buffer');
-const { start } = require('repl');
-
+/** 택배 */
 const readline = require('readline').createInterface({
   input: process.stdin,
   output: process.stdout,
