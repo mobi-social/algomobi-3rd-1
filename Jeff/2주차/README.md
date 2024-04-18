@@ -20,7 +20,7 @@ Target                               | Check |
 재귀 	(Recursion)                      |  []   |
 Sliding Window                        |  []   |
 트라이 (Trie)                           |  []   |
-힙 (Heap)                              |  []   |
+힙 (Heap)                              |  [x]   |
 우선순위 큐 (Priority-Queue)             |  []   |
 BruteForce                            |  []   |
 너비우선탐색 (BFS)                        |  []   |
@@ -49,6 +49,7 @@ ex)
  -->
 - [백준 > 1719](https://www.acmicpc.net/problem/1719)
 - [백준 > 10773](https://www.acmicpc.net/problem/10773)
+- [백준 > 1927](https://www.acmicpc.net/problem/1927)
 
 
 ## 미해결 문제 요약 👎
@@ -61,3 +62,4 @@ ex)
   - [문제이름](문제링크)
  -->
   - [백준 > 1238](https://www.acmicpc.net/problem/1238)
+  - [백준 > 13424](https://www.acmicpc.net/problem/13424)
