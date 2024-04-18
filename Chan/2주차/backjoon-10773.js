@@ -7,7 +7,7 @@ let input = []
 
 readline
   .on("line", function (line) {
-    input = line.split(" ").map((el) => parseInt(el))
+    input.push(parseInt(line))
   })
   .on("close", function () {
     const K = input[0]
