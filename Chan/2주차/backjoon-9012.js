@@ -12,17 +12,20 @@ readline
   .on("close", function () {
     const Cycle = +input[0]
     for (let i = 1; i <= Cycle; i++) {
-      const CheckStr = input[i]
-      CheckStr.forEach((item) => {
-        const CheckStrArr = item.split("")
-        let count = 0
-        CheckStrArr.map((str) => {
-          console.log(str)
-        })
+      let count = 0
+      let result = "NO"
+      let Target = input[i]
+      let TargetArr = Target[0].split("")
+      TargetArr.map((str) => {
+        if (count < 0) return
+        if (str === "(") {
+          count = count + 1
+        } else {
+          count = count - 1
+        }
       })
+      if (count === 0) result = "YES"
+      console.log(result)
     }
-
     process.exit()
   })
-
-//[ [ '3' ], [ '((' ], [ '))' ], [ '())(()' ] ]
