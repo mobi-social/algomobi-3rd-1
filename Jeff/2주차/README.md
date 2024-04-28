@@ -61,5 +61,5 @@ ex)
   - [문제이름](문제링크)
   - [문제이름](문제링크)
  -->
-  - [백준 > 1238](https://www.acmicpc.net/problem/1238)
-  - [백준 > 13424](https://www.acmicpc.net/problem/13424)
+  - ~~[백준 > 1238](https://www.acmicpc.net/problem/1238)~~ > 3주차
+  - ~~[백준 > 13424](https://www.acmicpc.net/problem/13424)~~ > 3주차
