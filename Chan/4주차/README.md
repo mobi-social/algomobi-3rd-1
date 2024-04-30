@@ -63,3 +63,4 @@ ex)
  -->
 
 - [백준 > 1920](https://www.acmicpc.net/problem/1920) // 시간초과로 미해결
+- [백준 > 10816](https://www.acmicpc.net/problem/10816)
