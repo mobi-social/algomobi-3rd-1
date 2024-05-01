@@ -1,56 +1,68 @@
-const { start } = require("repl")
-
 const readline = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,
 })
 
 let input = []
+const lower = (arr, target, start, end) => {
+  let ans = -1
+  while (start <= end) {
+    let mid = Math.floor((start + end) / 2)
+    if (arr[mid] < target) {
+      start = mid + 1
+    } else if (arr[mid] > target) {
+      end = mid - 1
+    } else {
+      ans = mid
+      end = mid - 1
+    }
+  }
+  return ans
+}
+
+const upper = (arr, target, start, end) => {
+  let ans = -1
+  while (start <= end) {
+    let mid = Math.floor((start + end) / 2)
+    if (arr[mid] < target) {
+      start = mid + 1
+    } else if (arr[mid] > target) {
+      end = mid - 1
+    } else {
+      ans = mid
+      end = start + 1
+    }
+  }
+  return ans
+}
+
+const solution = (input) => {
+  const [N, A, M, B] = input
+  A.sort((a, b) => a - b)
+  let ans = []
+  B.forEach((value) => {
+    const lowerIdx = lower(A, value, 0, A.length - 1)
+    const upperIdx = upper(A, value, 0, A.length - 1)
+    let result = 0
+
+    if (lowerIdx !== -1 && upperIdx !== -1) {
+      result = upperIdx - lowerIdx + 1
+    } else {
+      result = 0
+    }
+    console.log(ans)
+    ans.push(result)
+    console.log(ans)
+  })
+  console.log(ans)
+}
 
 readline
   .on("line", function (line) {
     input.push(line.split(" ").map((el) => +el))
   })
   .on("close", function () {
-    const [N, ArrN, M, ArrM] = input
-    ArrN.sort((a, b) => a - b)
-    let result = []
-    let min = 0
-    let max = ArrN.length1 - 1
-
-    const lowerBound = (arr, target, min, max) => {
-      while (min < max) {
-        let mid = parseInt(min + max) / 2
-        if (arr[mid] >= target) {
-          max = mid
-        } else {
-          min = mid + 1
-        }
-      }
-      return max
-    }
-
-    const upperBound = (arr, target, min, max) => {
-      while (min < max) {
-        let mid = parseInt(min + max) / 2
-        if (arr[mid] > target) {
-          max = mid
-        } else {
-          min = mid + 1
-        }
-      }
-      return max
-    }
-
-    for (let i = 0; i < ArrM.length; i += 1) {
-      //찾는 값의 개수 구하기
-      const n =
-        upperBound(ArrN, ArrM[i], min, max) -
-        lowerBound(ArrN, ArrM[i], min, max)
-      result.push(n)
-    }
-
-    console.log(result.join(" "))
+    solution(input)
     process.exit()
   })
- // https://jungeunpyun.tistory.com/73 후에다시,,,
+// https://jungeunpyun.tistory.com/73 ggg,,,,안풀림
