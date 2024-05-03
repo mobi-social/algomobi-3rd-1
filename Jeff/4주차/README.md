@@ -61,4 +61,4 @@ ex)
   - [문제이름](문제링크)
  -->
 - [백준 > 1456](https://www.acmicpc.net/problem/1456)
-- [백준 > 10859](https://www.acmicpc.net/problem/10859) x 2
+- [백준 > 10859](https://www.acmicpc.net/problem/10859) x 3
