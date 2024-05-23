@@ -45,6 +45,7 @@ ex)
   - [문제이름](문제링크)
   - [문제이름](문제링크)
  -->
+ - [백준 > 1010](https://www.acmicpc.net/problem/1010)
  - [백준 > 9251](https://www.acmicpc.net/problem/9251)
  - [백준 > 9252](https://www.acmicpc.net/problem/9252)
 
