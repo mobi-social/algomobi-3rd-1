@@ -34,7 +34,7 @@
 | Dijkstra                             |  []   |
 | 최소신장트리 (Minimum-Spanning-Tree) |  []   |
 | 그리디 (Greedy)                      |  []   |
-| 이분탐색 (Binary-Search)             |  []  |
+| 이분탐색 (Binary-Search)             |  []   |
 | 배낭문제 (Knapsack)                  |  []   |
 | 구현 (Implementation)                |  []   |
 
@@ -51,6 +51,7 @@ ex)
 
 - [백준 > 1991](https://www.acmicpc.net/problem/1991)
 - [백준 > 11729](https://www.acmicpc.net/problem/11729)
+
 ## 미해결 문제 요약 👎
 
 <!--
@@ -62,5 +63,4 @@ ex)
   - [문제이름](문제링크)
  -->
 
-- [백준 > 1920](https://www.acmicpc.net/problem/1920) // 시간초과로 미해결
-- [백준 > 10816](https://www.acmicpc.net/problem/10816)
+- [백준 > 2447](https://www.acmicpc.net/problem/2447)
