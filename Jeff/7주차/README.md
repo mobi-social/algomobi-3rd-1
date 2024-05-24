@@ -48,6 +48,7 @@ ex)
  - [백준 > 1010](https://www.acmicpc.net/problem/1010)
  - [백준 > 9251](https://www.acmicpc.net/problem/9251)
  - [백준 > 9252](https://www.acmicpc.net/problem/9252)
+ - [백준 > 16194](https://www.acmicpc.net/problem/16194)
 
 ## 미해결 문제 요약 👎
 <!--
