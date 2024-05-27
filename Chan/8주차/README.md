@@ -62,3 +62,5 @@ ex)
   - [문제이름](문제링크)
  -->
 
+- [백준 > 1992](https://www.acmicpc.net/problem/1992)
+- [백준 > 6630](https://www.acmicpc.net/problem/6630)
