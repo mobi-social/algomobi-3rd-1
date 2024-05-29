@@ -50,6 +50,7 @@ ex)
  -->
 
 - [백준 > 2630](https://www.acmicpc.net/problem/2630)
+- [백준 > 1780](https://www.acmicpc.net/problem/1780)
 
 ## 미해결 문제 요약 👎
 
