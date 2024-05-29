@@ -52,8 +52,8 @@ ex)
   - [문제이름](문제링크)
  -->
  - [백준 > 2407](https://www.acmicpc.net/problem/2407)
- - [백준 > 2954](https://www.acmicpc.net/problem/2954)
  - [백준 > 2609](https://www.acmicpc.net/problem/2609)
+ - [백준 > 2954](https://www.acmicpc.net/problem/2954)
 
  
 
@@ -68,7 +68,7 @@ ex)
   - [문제이름](문제링크)
   - [문제이름](문제링크)
  -->
-
+ - [백준 > 2609](https://www.acmicpc.net/problem/9613)
 
 
  
