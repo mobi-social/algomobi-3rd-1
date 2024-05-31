@@ -7,24 +7,41 @@ let input = []
 
 readline
   .on("line", function (line) {
-    input.push(line.split(" "))
+    input.push(line)
   })
   .on("close", function () {
     const [N, ...square] = input
-    square.map((arr) => arr.map((el) => el.split("")).map((el) => +el))
-    console.log(N, square)
+    const Box = square.map((row) => row.split("").map(Number))
+    const result = []
+
+    const QuardTree = (x, y, Size) => {
+      const BasePoint = Box[x][y]
+
+      if (isAllSame(x, y, Size, Box)) {
+        result.push(BasePoint)
+        return
+      }
+
+      result.push("(")
+      let half = Size / 2
+      QuardTree(x, y, half)
+      QuardTree(x, y + half, half)
+      QuardTree(x + half, y, half)
+      QuardTree(x + half, y + half, half)
+      result.push(")")
+    }
+
+    QuardTree(0, 0, N)
+    console.log(result.join(""))
     process.exit()
   })
 
-/**
- * 
-8
-11110000
-11110000
-00011100
-00011100
-11110000
-11110000
-11110011
-11110011
- */
+const isAllSame = (x, y, size, arr2D) => {
+  const base = arr2D[x][y]
+  for (let i = x; i < size + x; i++) {
+    for (let j = y; j < size + y; j++) {
+      if (base !== arr2D[i][j]) return false
+    }
+  }
+  return true
+}
